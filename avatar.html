@@ -1,0 +1,179 @@
+@@ -0,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./components.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Components</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="nav-header">
+      <nav class="navbar flex-row align-center g-1">
+        <a class="logo white white-border link rounded-circle" href="index.html"
+          >P</a
+        >
+        <a class="link white" href="./index.html">Home</a>
+        <a class="link white" href="./Introduction.html">Components</a>
+      </nav>
+    </header>
+    <div class="main-content flex-row">
+      <aside class="sidebar">
+        <h3 class="sidebar-heading">Components</h3>
+        <ul class="unstyled">
+          <li><a href="./Introduction.html">Intro</a></li>
+          <li><a href="./Avatar.html">Avatar</a></li>
+          <li><a href="./alert.html">Alerts</a></li>
+          <li><a href="./badges.html">Badges</a></li>
+          <li><a href="./button.html">Button</a></li>
+          <li><a href="./cards.html">Cards</a></li>
+          <li><a href="./images.html">Images</a></li>
+          <li><a href="./input.html">Input</a></li>
+        </ul>
+      </aside>
+      <hr class="vertical-line" />
+      <main class="grow-1">
+        <h2 class="heading-1">Avatar</h2>
+        <p>
+          The definition of an avatar is something visual used to represent
+          non-visual concepts or ideas, or is an image that is used to represent
+          a person in the virtual world of the Internet and computers. An
+          example of an avatar is an icon you use to represent you on an
+          Internet forum.
+        </p>
+        <div>
+          <h4 class="heading-3">Basic example</h4>
+          <div class="container-box m-radius flex-row">
+            <i
+              class="fa fa-user fa-3x icon rounded-circle black-border flex-row-center-center icon-1"
+            ></i>
+            <i
+              class="fa fa-user-md fa-3x icon rounded-circle black-border flex-row-center-center icon-1"
+            ></i>
+            <i
+              class="fa fa-child fa-3x icon rounded-circle black-border flex-row-center-center icon-1"
+            ></i>
+            <i
+              class="fa fa-codepen fa-3x icon rounded-circle black-border flex-row-center-center icon-1"
+            ></i>
+          </div>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=true&fl=1&fm=Hack&fs=14px&lh=145%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container-box%2520m-radius%2520flex-row%2522%253E%250A%2520%253Ci%2520class%253D%2522fa%2520fa-user%2520fa-3x%2520icon%2520rounded-circle%2520black-border%2520flex-row-center-center%2522%253E%253C%252Fi%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-user-md%2520fa-3x%2520icon%2520rounded-circle%2520black-border%2520flex-row-center-center%2522%253E%253C%252Fi%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-child%2520fa-3x%2520icon%2520rounded-circle%2520black-border%2520flex-row-center-center%2522%253E%253C%252Fi%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-codepen%2520fa-3x%2520icon%2520rounded-circle%2520black-border%2520flex-row-center-center%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E"
+            style="
+              width: 1000px;
+              height: 350px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+          <h4 class="heading-3">Usage</h4>
+
+          <ul class="usage-list">
+            <li>
+              By using, <code>rounded-circle</code> class, you can make any
+              element's border in a complete circle shape.
+            </li>
+            <li>
+              <code>m-radius</code> class is provided to make any element's
+              border radius to 5px.
+            </li>
+            <li>
+              <code>flex-row-center-center</code> class gives you 3 properties,
+              namely
+              <code
+                >flex:row, align-content:center and justify-content:center</code
+              >
+            </li>
+            <li>
+              <code>black-border</code> class is used to make border of any
+              element to 2px solid black.
+            </li>
+          </ul>
+
+          <h4 class="heading-3">Real Life Example</h4>
+          <div class="container-box m-radius flex-row">
+            <img
+              src="https://picsum.photos/100/100?random=1"
+              class="rounded-circle img-avatar"
+              alt="Avatar"
+            />
+            <img
+              src="https://picsum.photos/100/100?random=2"
+              class="rounded-circle img-avatar"
+              alt="Avatar"
+            />
+            <img
+              src="https://picsum.photos/100/100?random=3"
+              class="rounded-circle img-avatar"
+              alt="Avatar"
+            />
+            <img
+              src="https://picsum.photos/100/100?random=4"
+              class="rounded-circle img-avatar"
+              alt="Avatar"
+            />
+          </div>
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=javascript&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=true&fl=1&fm=Hack&fs=17px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container-box%2520m-radius%2520flex-row%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F100%252F100%253Frandom%253D1%2522%250A%2520%2520%2520%2520class%253D%2522rounded-circle%2520img-avatar%2522%250A%2520%2520%2520%2520alt%253D%2522Avatar%2522%250A%2520%2520%252F%253E%250A%253C%252Fdiv%253E"
+            style="
+              width: 1000px;
+              height: 400px;
+              border: 0;
+              transform: scale(1);
+              overflow: hidden;
+            "
+            sandbox="allow-scripts allow-same-origin"
+          >
+          </iframe>
+          <p>
+            <code>rounded-circle</code> class is used here as well to make it
+            like avatar.
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <footer class="flex-row footer g-6">
+      <div class="footer-content g-1 flex-column">
+        <div class="brand-logo">
+          <div class="logo black black-border rounded-circle">P</div>
+          <span>Patched</span>
+        </div>
+        <p>
+          Designed and built with love by the patched team to help the community
+          create their web apps at 🚀 speed.
+        </p>
+      </div>
+      <div class="flex-column g-1">
+        <h3>Links</h3>
+        <a href="/">Home</a>
+        <a href="/">Docs</a>
+        <a href="/">Examples</a>
+        <a href="/">Blog</a>
+      </div>
+      <div class="flex-column g-1">
+        <h3>Social Media</h3>
+        <a class="list" href="https://twitter.com/BajajPaarth">Twitter</a>
+        <a class="list" href="https://www.linkedin.com/in/paarth-bajaj/"
+          >Linkedin</a
+        >
+        <a class="list" href="https://github.com/paarthbajaj">Github</a>
+      </div>
+      <div class="flex-column g-1">
+        <h3>Community</h3>
+        <a href="https://discord.gg/CZJ35CFB">TeamTanay Discord</a>
+        <a href="https://tanaypratap.com/">Mentor's website</a>
+        <a href="https://neog.camp/handbook/home">The Neog Camp</a>
+      </div>
+    </footer>
+  </body>
+</html>
