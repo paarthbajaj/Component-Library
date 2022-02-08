@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./components.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Badges</title>
+  </head>
+  <body>
+    <header class="nav-header">
+      <nav class="navbar flex-row align-center g-1">
+        <a class="logo white white-border link rounded-circle" href="index.html"
+          >P</a
+        >
+        <a class="link white" href="./index.html">Home</a>
+        <a class="link white" href="./Introduction.html">Components</a>
+        <!-- <a class="link white" href="#">Docs</a> -->
+      </nav>
+    </header>
+    <div class="main-content flex-row">
+      <aside class="sidebar">
+        <h3 class="sidebar-heading">Components</h3>
+        <ul class="unstyled">
+          <li><a href="./Introduction.html">Intro</a></li>
+          <li><a href="./Avatar.html">Avatar</a></li>
+          <li><a href="./alert.html">Alerts</a></li>
+          <li><a href="./badges.html">Badges</a></li>
+          <li><a href="./button.html">Button</a></li>
+          <li><a href="./cards.html">Cards</a></li>
+          <li><a href="./images.html">Images</a></li>
+          <li><a href="./input.html">Input</a></li>
+        </ul>
+      </aside>
+      <hr class="vertical-line" />
+      <main class="grow-1">
+        <h2 class="heading-1">Badges</h2>
+        <p>
+          Badges are displayed on app and folder icons on your Home screen to
+          notify you of something new in an app. What the number represents will
+          depend upon the app - it might be the number of missed phone calls,
+          the number of unread emails, the number of Direct Messages on Twitter,
+          and so on.
+        </p>
+        <h4 class="heading-3">Examples of Badge on icon</h4>
+        <div class="container-box m-radius flex-row">
+          <div class="badge">
+            <div
+              class="notify-count notify-count-left flex-row-center-center rounded-circle"
+            >
+              99
+            </div>
+            <i class="fa fa-home icon badge-icon"></i>
+          </div>
+          <div class="badge">
+            <div
+              class="notify-count notify-count-right flex-row-center-center rounded-circle"
+            >
+              7
+            </div>
+            <i class="fa fa-comments icon badge-icon"></i>
+          </div>
+          <div class="badge">
+            <div
+              class="notify-count notify-count-left flex-row-center-center rounded-circle"
+            >
+              2
+            </div>
+            <i class="fa fa-envelope icon badge-icon"></i>
+          </div>
+          <div class="badge">
+            <div
+              class="notify-count notify-count-right flex-row-center-center rounded-circle"
+            >
+              5+
+            </div>
+            <i class="fa fa-amazon icon badge-icon"></i>
+          </div>
+        </div>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container-box%2520m-radius%2520flex-row%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522notify-count%2520notify-count-left%2520flex-row-center-center%2520rounded-circle%2522%253E99%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-home%2520icon%2520badge-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522notify-count%2520notify-count-right%2520flex-row-center-center%2520rounded-circle%2522%253E23%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-bell%2520icon%2520badge-icon%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+          style="
+            width: 62.5rem;
+            height: 25rem;
+            border: 0;
+            transform: scale(1);
+            overflow: hidden;
+          "
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
+
+        <h4 class="heading-3">Examples of Badge on avatar</h4>
+        <div class="container-box m-radius flex-row">
+          <div class="badge-avatar">
+            <div class="notify notify-count-right rounded-circle"></div>
+            <i
+              class="fa fa-user fa-3x icon rounded-circle black-border flex-row-center-center icon-1"
+            ></i>
+          </div>
+          <div class="badge-avatar">
+            <div class="notify notify-count-left rounded-circle"></div>
+            <i
+              class="fa fa-user-md fa-3x icon rounded-circle black-border flex-row-center-center icon-1"
+            ></i>
+          </div>
+          <div class="badge-avatar">
+            <div class="notify notify-count-right rounded-circle"></div>
+            <i
+              class="fa fa-child fa-3x icon rounded-circle black-border flex-row-center-center icon-1"
+            ></i>
+          </div>
+          <div class="badge-avatar">
+            <div class="notify notify-count-left rounded-circle"></div>
+            <i
+              class="fa fa-codepen fa-3x icon rounded-circle black-border flex-row-center-center icon-1"
+            ></i>
+          </div>
+        </div>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container-box%2520m-radius%2520flex-row%2522%253E%250A%2509%253Cdiv%2520class%253D%2522badge-avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522notify%2520notify-count-right%2520rounded-circle%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-user%2520fa-3x%2520icon%2520rounded-circle%2520black-border%2520flex-row-center-center%2522%253E%253C%252Fi%253E%250A%2509%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge-avatar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522notify%2520notify-count-left%2520rounded-circle%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-user-md%2520fa-3x%2520icon%2520rounded-circle%2520black-border%2520flex-row-center-center%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+          style="
+            width: 62.5rem;
+            height: 25rem;
+            border: 0;
+            transform: scale(1);
+            overflow: hidden;
+          "
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
+        <h4 class="heading-3">Usage</h4>
+        <ul>
+          <li>
+            By using, <code>m-radius</code> class, you can set a component's
+            border radius 5px.
+          </li>
+          <li>
+            <code>notify</code> and <code>notify-count</code> classes have
+            property of position absolute so the badges can be free of normal
+            flow.
+          </li>
+          <li>
+            <code>notify-count-left</code> class is used for badge on the left.
+          </li>
+          <li>
+            <code>notify-count-right</code> class is used for badge on the
+            right.
+          </li>
+        </ul>
+      </main>
+    </div>
+    <footer class="flex-row footer g-6">
+      <div class="footer-content g-1 flex-column grow-1">
+        <div class="brand-logo">
+          <div class="logo black black-border rounded-circle">P</div>
+          <span>Patched</span>
+        </div>
+        <p>
+          Designed and built with love by the patched team to help the community
+          create their web apps at 🚀 speed.
+        </p>
+      </div>
+      <div class="flex-column g-1 grow-1">
+        <h3>Links</h3>
+        <a href="./index.html">Home</a>
+        <a href="#">Docs</a>
+        <a href="./Introduction.html">Examples</a>
+        <a href="#">Blog</a>
+      </div>
+      <div class="flex-column g-1 grow-1">
+        <h3>Social Media</h3>
+        <a class="list" href="https://twitter.com/BajajPaarth">Twitter</a>
+        <a class="list" href="https://www.linkedin.com/in/paarth-bajaj/"
+          >Linkedin</a
+        >
+        <a class="list" href="https://github.com/paarthbajaj">Github</a>
+      </div>
+      <div class="flex-column g-1 grow-1">
+        <h3>Community</h3>
+        <a href="https://discord.gg/CZJ35CFB">TeamTanay Discord</a>
+        <a href="https://tanaypratap.com/">Mentor's website</a>
+        <a href="https://neog.camp/handbook/home">The Neog Camp</a>
+      </div>
+    </footer>
+  </body>
+</html>
