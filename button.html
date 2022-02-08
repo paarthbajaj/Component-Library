@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./components.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Button</title>
+  </head>
+  <body>
+    <header class="nav-header">
+      <nav class="navbar flex-row align-center g-1">
+        <a class="logo white white-border link rounded-circle" href="index.html"
+          >P</a
+        >
+        <a class="link white" href="./index.html">Home</a>
+        <a class="link white" href="./Introduction.html">Components</a>
+        <!-- <a class="link white" href="#">Docs</a> -->
+      </nav>
+    </header>
+    <div class="main-content flex-row">
+      <aside class="sidebar">
+        <h3 class="sidebar-heading">Components</h3>
+        <ul class="unstyled">
+          <li><a href="./Introduction.html">Intro</a></li>
+          <li><a href="./Avatar.html">Avatar</a></li>
+          <li><a href="./alert.html">Alerts</a></li>
+          <li><a href="./badges.html">Badges</a></li>
+          <li><a href="./button.html">Button</a></li>
+          <li><a href="./cards.html">Cards</a></li>
+          <li><a href="./images.html">Images</a></li>
+          <li><a href="./input.html">Input</a></li>
+        </ul>
+      </aside>
+      <hr class="vertical-line" />
+      <main class="grow-1">
+        <h2 id="pageup" class="heading-1">Buttons</h2>
+        <p>
+          Buttons allow users to take actions, and make choices, with a single
+          tap. Buttons communicate actions that users can take. They are
+          typically placed throughout your website UI, and they should be easily
+          findable and identifiable while clearly indicating the action they
+          allow a user to complete.
+        </p>
+        <h4 class="heading-3">Examples of Primary Button</h4>
+        <div class="container-box align-center m-radius flex-row">
+          <button type="button" class="btn btn-primary">Primary</button>
+          <button type="button" class="btn btn-secondary">Secondary</button>
+          <button type="button" class="btn btn-success">Success</button>
+          <button type="button" class="btn btn-danger">Danger</button>
+        </div>
+        <h4 class="heading-3">Examples of Link Button</h4>
+        <div class="container-box align-center m-radius flex-row">
+          <a href="#pageup">
+            <button class="btn btn-primary">Pageup</button>
+          </a>
+          <a href="#pagedown">
+            <button class="btn btn-success">PageDown</button>
+          </a>
+        </div>
+        <h4 class="heading-3">Examples of Icon Button</h4>
+        <div class="container-box align-center m-radius flex-row">
+          <button type="button" class="btn btn-primary">
+            <i class="fa fa-shopping-cart"></i>
+            Add to cart
+          </button>
+          <button type="button" class="btn btn-danger">
+            <i class="fa fa-trash"></i>
+            Remove
+          </button>
+        </div>
+        <h4 class="heading-3">Examples of Disabed Button</h4>
+        <div class="container-box align-center m-radius flex-row">
+          <button type="button" class="btn btn-primary btn-dis" disabled>
+            Primary Button
+          </button>
+          <button type="button" class="btn btn-secondary btn-dis" disabled>
+            Secondary Button
+          </button>
+        </div>
+        <h4 class="heading-3">Floating Button</h4>
+        <p>
+          For floating buttons, just add property of position-absolute,
+          top-right-bottom-left to 0.
+        </p>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14.5px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container-box%2520m-radius%2520flex-row%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-success%2522%253ESuccess%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-danger%2522%253EDanger%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Link%2520Button%2520--%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523pageup%2522%253E%250A%2520%2520%2520%2520%2520%2520%2509%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EPageup%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2509%2509%253C%21--%2520Icon%2520Buttons%2520--%253E%250A%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%2509%253Ci%2520class%253D%2522fa%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%2520Add%2520to%2520cart%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2509%2509%253C%21--%2520Disabled%2520Buttons%2520--%253E%250A%2520%2520%2520%2520%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-primary%2520btn-dis%2522%2520disabled%253E%2520Primary%2520Button%250A%2520%2520%2520%2520%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+          style="
+            width: 62.5rem;
+            height: 35rem;
+            margin-top: 2rem;
+            border: 0;
+            transform: scale(1);
+            overflow: hidden;
+          "
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
+        <h4 class="heading-3">Usage</h4>
+        <ul>
+          <li>
+            <code>btn</code>class will have all the necessary properties like
+            cursor:ponter, paddings, border-radius, etc.
+          </li>
+          <li>
+            <code>btn-primary, btn-secondary, btn-success, btn-danger</code>
+            classes will provide the color and background as the name suggests.
+          </li>
+          <li>
+            <code>btn-dis</code> class is for disaled button. Make buttons look
+            inactive by adding the disabled boolean attribute to any button
+            element. Disabled buttons have pointer-events: none applied to,
+            preventing hover and active states from triggering.
+          </li>
+          <li>
+            By using, <code>m-radius</code> class, you can set a component's
+            border radius 5px.
+          </li>
+        </ul>
+      </main>
+    </div>
+    <footer class="flex-row footer g-6">
+      <div class="footer-content g-1 flex-column grow-1">
+        <div class="brand-logo">
+          <div class="logo black black-border rounded-circle">P</div>
+          <span>Patched</span>
+        </div>
+        <p>
+          Designed and built with love by the patched team to help the community
+          create their web apps at 🚀 speed.
+        </p>
+      </div>
+      <div class="flex-column g-1 grow-1">
+        <h3>Links</h3>
+        <a href="./index.html">Home</a>
+        <a href="#">Docs</a>
+        <a href="./Introduction.html">Examples</a>
+        <a href="#">Blog</a>
+      </div>
+      <div class="flex-column g-1 grow-1">
+        <h3>Social Media</h3>
+        <a class="list" href="https://twitter.com/BajajPaarth">Twitter</a>
+        <a class="list" href="https://www.linkedin.com/in/paarth-bajaj/"
+          >Linkedin</a
+        >
+        <a class="list" href="https://github.com/paarthbajaj">Github</a>
+      </div>
+      <div class="flex-column g-1 grow-1">
+        <h3>Community</h3>
+        <a href="https://discord.gg/CZJ35CFB">TeamTanay Discord</a>
+        <a href="https://tanaypratap.com/">Mentor's website</a>
+        <a href="https://neog.camp/handbook/home">The Neog Camp</a>
+      </div>
+    </footer>
+  </body>
+</html>
