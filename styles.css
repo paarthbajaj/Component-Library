@@ -10,6 +10,18 @@
   --light-blue: #bfdbfe;
   --sea-green: #6ee7b7;
   --red: #dc2626;
+  --pri-blue: #0746a3;
+  --sky-blue: #ccdffd;
+  --dark-sky-blue: #b7d3fb;
+  --dark-red: #861d26;
+  --dull-pink: #fcd2d6;
+  --darker-pink: #f5bdc2;
+  --dark-green: #0f5132;
+  --light-green: #d1e7dd;
+  --lighter-green: #badbcc;
+  --mud-yellow: #644b00;
+  --light-mud-yellow: #ffeaa6;
+  --darker-mud-yellow: #fbe7ab;
 }
 * {
   font-family: "Roboto Mono", monospace;
@@ -137,11 +149,9 @@ a {
 .l-radius {
   border-radius: 10px;
 }
-.vertical-line{
+.vertical-line {
   color: var(--grey);
-  width: 1px; 
-  height: 100vh; 
-  display: inline-block"
+  width: 1px;
 }
 .middle-content {
   width: 32%;
