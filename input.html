@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./components.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Input</title>
+  </head>
+  <body>
+    <header class="nav-header">
+      <nav class="navbar flex-row align-center g-1">
+        <a class="logo white white-border link rounded-circle" href="index.html"
+          >P</a
+        >
+        <a class="link white" href="./index.html">Home</a>
+        <a class="link white" href="./Introduction.html">Components</a>
+      </nav>
+    </header>
+    <div class="main-content flex-row">
+      <aside class="sidebar">
+        <h3 class="sidebar-heading">Components</h3>
+        <ul class="unstyled">
+          <li><a href="./Introduction.html">Intro</a></li>
+          <li><a href="./Avatar.html">Avatar</a></li>
+          <li><a href="./alert.html">Alerts</a></li>
+          <li><a href="./badges.html">Badges</a></li>
+          <li><a href="./button.html">Button</a></li>
+          <li><a href="./cards.html">Cards</a></li>
+          <li><a href="./images.html">Images</a></li>
+          <li><a href="./input.html">Input</a></li>
+        </ul>
+      </aside>
+      <hr class="vertical-line" />
+      <main class="grow-1">
+        <h2 class="heading-1">Input</h2>
+        <p>
+          A text box (input box), text field or text entry box is a control
+          element of a graphical user interface, that should enable the user to
+          input text information to be used by a program.
+        </p>
+        <h4 class="heading-3">Example of textbox</h4>
+        <div class="container-box m-radius flex-row align-flex-start">
+          <div>
+            <h5>Normal textbox</h5>
+            <input class="input" type="text" placeholder="Normal Textbox" />
+          </div>
+          <div class="req-div">
+            <h5>Required input field</h5>
+            <input
+              id="required-input"
+              class="input req-input"
+              type="text"
+              placeholder="Required Field"
+              required
+            />
+            <label for="required-input" class="error"
+              >This field is required.</label
+            >
+          </div>
+          <div class="req-div">
+            <h5>Required field with indian number validation</h5>
+            <input
+              id="required-input"
+              class="input req-input"
+              type="text"
+              placeholder="Enter Mobile number"
+              minlength="10"
+              maxlength="10"
+              pattern="^[6789]\d{9}$"
+              required
+            />
+            <label for="required-input" class="error"
+              >Invalid mobile number.</label
+            >
+          </div>
+        </div>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=628&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=28px&ph=33px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cinput%250A%2520%2520%2509id%253D%2522required-input%2522%2520class%253D%2522input%2520req-input%2522%2520type%253D%2522text%2522%2520%2509%2509placeholder%253D%2522Enter%2520Mobile%2520number%2522%2520minlength%253D%252210%2522%2520%2509%2509%2509%2509maxlength%253D%252210%2522%2520pattern%253D%2522%255E%255B6789%255D%255Cd%257B9%257D%2524%2522%250A%2520%2520%2509required%250A%252F%253E"
+          style="
+            width: 44rem;
+            height: 15rem;
+            border: 0;
+            transform: scale(1);
+            overflow: hidden;
+          "
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
+        <h4 class="heading-3">Example of textbox in form</h4>
+        <div class="container-box m-radius">
+          <form class="form">
+            <h5 class="form-heading">Sample Form</h5>
+            <label class="form-label" for="name">Username</label>
+            <input
+              class="input"
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+            />
+            <label class="form-label" for="password">Password</label>
+            <input
+              class="input req-pass"
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+              required
+            />
+            <label for="password" class="error">Password cannot be empty</label>
+            <label class="form-label" for="file">Browse</label>
+            <input type="file" id="file" />
+            <label class="form-label" for="range">Select Range</label>
+            <input type="range" id="range" />
+            <label class="form-label" for="date">Date</label>
+            <input
+              class="input"
+              type="date"
+              id="date"
+              placeholder="Choose date"
+            />
+            <div class="form-label">
+              <input id="checkbox" type="checkbox" />
+              <label for="checkbox">I agree to the terms</label>
+            </div>
+            <div class="form-btns">
+              <button class="btn btn-primary" type="submit">Sign up</button>
+              <button class="btn btn-secondary" type="reset">Cancel</button>
+            </div>
+          </form>
+        </div>
+        <h4 class="heading-3">Usage</h4>
+        <ul class="usage-list">
+          <li>
+            The required attribute is a boolean attribute. When present, it
+            specifies that an input field must be filled out before submitting
+            the form.
+          </li>
+          <li>
+            The pattern attribute specifies a regular expression that the input
+            element's value is checked against on form submission.
+          </li>
+          <li>
+            There are many types of input element in HTML. Some are used in the
+            above form. To read more about them.<b
+              ><a
+                href="https://www.w3schools.com/html/html_form_input_types.asp"
+                >Click Here.</a
+              ></b
+            >
+          </li>
+        </ul>
+      </main>
+    </div>
+    <footer class="flex-row footer g-6">
+      <div class="footer-content g-1 flex-column grow-1">
+        <div class="brand-logo">
+          <div class="logo black black-border rounded-circle">P</div>
+          <span>Patched</span>
+        </div>
+        <p>
+          Designed and built with love by the patched team to help the community
+          create their web apps at 🚀 speed.
+        </p>
+      </div>
+      <div class="flex-column g-1 grow-1">
+        <h3>Links</h3>
+        <a href="./index.html">Home</a>
+        <a href="#">Docs</a>
+        <a href="./Introduction.html">Examples</a>
+        <a href="#">Blog</a>
+      </div>
+      <div class="flex-column g-1 grow-1">
+        <h3>Social Media</h3>
+        <a class="list" href="https://twitter.com/BajajPaarth">Twitter</a>
+        <a class="list" href="https://www.linkedin.com/in/paarth-bajaj/"
+          >Linkedin</a
+        >
+        <a class="list" href="https://github.com/paarthbajaj">Github</a>
+      </div>
+      <div class="flex-column g-1 grow-1">
+        <h3>Community</h3>
+        <a href="https://discord.gg/CZJ35CFB">TeamTanay Discord</a>
+        <a href="https://tanaypratap.com/">Mentor's website</a>
+        <a href="https://neog.camp/handbook/home">The Neog Camp</a>
+      </div>
+    </footer>
+  </body>
+</html>
