@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./components.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Input</title>
+  </head>
+  <body>
+    <header class="nav-header">
+      <nav class="navbar flex-row align-center g-1">
+        <a class="logo white white-border link rounded-circle" href="index.html"
+          >P</a
+        >
+        <a class="link white" href="./index.html">Home</a>
+        <a class="link white" href="./Introduction.html">Components</a>
+      </nav>
+    </header>
+    <div class="main-content flex-row">
+      <aside class="sidebar">
+        <h3 class="sidebar-heading">Components</h3>
+        <ul class="unstyled">
+          <li><a href="./Introduction.html">Intro</a></li>
+          <li><a href="./Avatar.html">Avatar</a></li>
+          <li><a href="./alert.html">Alerts</a></li>
+          <li><a href="./badges.html">Badges</a></li>
+          <li><a href="./button.html">Button</a></li>
+          <li><a href="./cards.html">Cards</a></li>
+          <li><a href="./images.html">Images</a></li>
+          <li><a href="./input.html">Input</a></li>
+        </ul>
+      </aside>
+      <hr class="vertical-line" />
+      <main class="grow-1">
+        <h2 class="heading-1">Text</h2>
+        <p>
+          Guide and examples for common text utilities to control alignment,
+          size, weight, and more.
+        </p>
+        <h4 class="heading-3">Headings</h4>
+        <div class="container-box m-radius">
+          <h1 class="h1">Heading 1</h1>
+          <h2 class="h2">Heading 2</h2>
+          <h3 class="h3">Heading 3</h3>
+          <h4 class="h4">Heading 4</h4>
+          <h5 class="h5">Heading 5</h5>
+          <h6 class="h6">Heading 6</h6>
+        </div>
+        <p class="heading-2">
+          Classes from h1 to h6 are available when you want to match the font
+          style of the headings.
+        </p>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=628&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=28px&ph=33px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch1%2520class%253D%2522h1%2522%253EHeading%25201%253C%252Fh1%253E%250A%253Ch2%2520class%253D%2522h2%2522%253EHeading%25202%253C%252Fh2%253E%250A%253Ch3%2520class%253D%2522h3%2522%253EHeading%25203%253C%252Fh3%253E%250A%253Ch4%2520class%253D%2522h4%2522%253EHeading%25204%253C%252Fh4%253E%250A%253Ch5%2520class%253D%2522h5%2522%253EHeading%25205%253C%252Fh5%253E%250A%253Ch6%2520class%253D%2522h6%2522%253EHeading%25206%253C%252Fh6%253E"
+          style="
+            width: 44rem;
+            height: 16rem;
+            border: 0;
+            transform: scale(1);
+            overflow: hidden;
+          "
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
+        <h4 class="heading-3">Font Size</h4>
+        <div class="container-box m-radius">
+          <p class="txt-1">Paragraph text</p>
+          <p class="txt-2">Paragraph text</p>
+          <p class="txt-3">Paragraph text</p>
+          <p class="txt-4">Paragraph text</p>
+          <p class="txt-5">Paragraph text</p>
+          <p class="txt-6">Paragraph text</p>
+        </div>
+        <p class="heading-2">
+          You can customize your font-sizes by using these classes<code
+            >txt-1, txt-2, txt-3, txt-4, txt-5, txt-6</code
+          >.
+        </p>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=628&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=28px&ph=33px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522txt-1%2522%253EParagraph%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-2%2522%253EParagraph%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-3%2522%253EParagraph%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-4%2522%253EParagraph%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-5%2522%253EParagraph%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-6%2522%253EParagraph%2520text%253C%252Fp%253E"
+          style="
+            width: 44rem;
+            height: 16rem;
+            border: 0;
+            transform: scale(1);
+            overflow: hidden;
+          "
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
+        <h4 class="heading-3">Font Weights and styles</h4>
+        <div class="container-box m-radius">
+          <p class="txt-bold">Bold text</p>
+          <p class="txt-normal">Normal Weight text</p>
+          <p class="txt-light">Light weight text</p>
+          <p class="txt-italic">Italic text</p>
+        </div>
+        <p class="heading-2">
+          Change the font-weight and font-style with these classes at ease
+          <code>txt-bold, txt-normal, txt-light, txt-italic</code>.
+        </p>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=534.5&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=28px&ph=33px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522txt-bold%2522%253EBold%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-normal%2522%253ENormal%2520Weight%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-light%2522%253ELight%2520weight%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-italic%2522%253EItalic%2520text%253C%252Fp%253E"
+          style="
+            width: 42rem;
+            height: 14rem;
+            border: 0;
+            transform: scale(1);
+            overflow: hidden;
+          "
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
+        <h4 class="heading-3">Alignment</h4>
+        <div class="container-box m-radius">
+          <p class="txt-right">Right aligned text</p>
+          <p class="txt-center">Center aligned text</p>
+          <p class="txt-left">Left aligned text</p>
+          <p class="txt-justify">Justified text</p>
+        </div>
+        <p class="heading-2">
+          Use these utilities for the alignment. Please note that justify
+          alignment stretches the lines so that each line has equal width (like
+          in newspapers and magazines).
+        </p>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=657&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=28px&ph=33px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%2520class%253D%2522txt-right%2522%253ERight%2520aligned%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-center%2522%253ECenter%2520aligned%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-left%2522%253ELeft%2520aligned%2520text%253C%252Fp%253E%250A%253Cp%2520class%253D%2522txt-justify%2522%253EJustified%2520text%253C%252Fp%253E%250A%2520%2520%253C%21--%2520Justify%2520alignment%2520stretches%2520the%2520lines%2520so%2520that%2520each%2520line%2520has%2520equal%2520width%2520%28like%2520in%2520newspapers%2520and%2520magazines%29%2520--%253E"
+          style="
+            width: 48rem;
+            height: 16rem;
+            border: 0;
+            transform: scale(1);
+            overflow: hidden;
+          "
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
+      </main>
+    </div>
+    <footer class="flex-row footer g-6">
+      <div class="footer-content g-1 flex-column grow-1">
+        <div class="brand-logo">
+          <div class="logo black black-border rounded-circle">P</div>
+          <span>Patched</span>
+        </div>
+        <p>
+          Designed and built with love by the patched team to help the community
+          create their web apps at 🚀 speed.
+        </p>
+      </div>
+      <div class="flex-column g-1 grow-1">
+        <h3>Links</h3>
+        <a href="./index.html">Home</a>
+        <a href="#">Docs</a>
+        <a href="./Introduction.html">Examples</a>
+        <a href="#">Blog</a>
+      </div>
+      <div class="flex-column g-1 grow-1">
+        <h3>Social Media</h3>
+        <a class="list" href="https://twitter.com/BajajPaarth">Twitter</a>
+        <a class="list" href="https://www.linkedin.com/in/paarth-bajaj/"
+          >Linkedin</a
+        >
+        <a class="list" href="https://github.com/paarthbajaj">Github</a>
+      </div>
+      <div class="flex-column g-1 grow-1">
+        <h3>Community</h3>
+        <a href="https://discord.gg/CZJ35CFB">TeamTanay Discord</a>
+        <a href="https://tanaypratap.com/">Mentor's website</a>
+        <a href="https://neog.camp/handbook/home">The Neog Camp</a>
+      </div>
+    </footer>
+  </body>
+</html>
