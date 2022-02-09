@@ -301,3 +301,46 @@
 .txt-justify {
   text-align: justify;
 }
+
+/* ************modal************* */
+.img-modal {
+  width: 30rem;
+  border-radius: 5px;
+}
+.dialog-box {
+  z-index: 999;
+  display: none;
+  background-color: var(--white);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 19rem;
+  min-height: 19rem;
+  min-width: 25rem;
+  max-width: 25rem;
+  border-radius: 4px;
+  box-shadow: rgba(149, 157, 165, 0.5) 0rem 0.5rem 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.header-text {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.0125em;
+  padding: 0 1.5rem 0.56rem;
+}
+.dialog-text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.03125em;
+  padding: 0 1.5rem 1.25rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+.btn-container {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
