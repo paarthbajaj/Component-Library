@@ -24,7 +24,7 @@
 .container-box {
   border: 1px solid var(--grey-2);
   padding: 1rem 2rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
   justify-content: space-evenly;
   min-height: 10vh;
 }
@@ -250,4 +250,54 @@
 }
 .req-div {
   min-width: 14.375rem;
+}
+
+/* **************text utilities************ */
+.h1,
+.txt-1 {
+  font-size: 2.5rem;
+}
+.h2,
+.txt-2 {
+  font-size: 2rem;
+}
+.h3,
+.txt-3 {
+  font-size: 1.75rem;
+}
+.h4,
+.txt-4 {
+  font-size: 1.5rem;
+}
+.h5,
+.txt-5 {
+  font-size: 1.25rem;
+}
+.h6,
+.txt-6 {
+  font-size: 1rem;
+}
+.txt-bold {
+  font-weight: 700;
+}
+.txt-normal {
+  font-weight: 400;
+}
+.txt-light {
+  font-weight: 300;
+}
+.txt-italic {
+  font-style: italic;
+}
+.txt-right {
+  text-align: right;
+}
+.txt-left {
+  text-align: left;
+}
+.txt-center {
+  text-align: center;
+}
+.txt-justify {
+  text-align: justify;
 }
