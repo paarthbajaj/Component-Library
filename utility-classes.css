@@ -34,3 +34,9 @@
 .pr-3{
     padding-right: 3rem;
 }
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.pt-1 {
+  padding-top: 1rem;
+}
