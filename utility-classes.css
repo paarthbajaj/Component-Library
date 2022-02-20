@@ -28,3 +28,9 @@
 .fw-6 {
   font-weight: 600;
 }
+.pl-3{
+    padding-left: 3rem;
+}
+.pr-3{
+    padding-right: 3rem;
+}
