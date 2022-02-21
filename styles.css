@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
 :root {
   --black: #282828;
   --purple: #5348c7;
@@ -24,7 +24,7 @@
   --darker-mud-yellow: #fbe7ab;
 }
 * {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Nunito Sans", sans-serif;
   padding: 0;
   margin: 0;
 }
