@@ -135,7 +135,7 @@
   list-style: none;
 }
 .unstyled li,
-a {
+.unstyled a {
   font-size: 1.1rem;
   padding: 0.2rem 0.5rem;
   border-radius: 5px;
