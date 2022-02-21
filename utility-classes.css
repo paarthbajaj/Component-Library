@@ -40,3 +40,6 @@
 .pt-1 {
   padding-top: 1rem;
 }
+.cursor-pointer {
+  cursor: pointer;
+}
