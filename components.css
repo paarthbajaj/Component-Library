@@ -382,3 +382,49 @@
 .stack-list-item:hover {
   background-color: var(--grey-2);
 }
+/* ************rating************* */
+.rating-btn {
+  background-color: transparent;
+  color: var(--grey-3);
+  border: none;
+}
+
+.rating-btn:hover {
+  color: var(--darker-mud-yellow);
+}
+
+/* ************toast************* */
+.toast {
+  padding: 0 1rem;
+  height: 2rem;
+  width: 450px;
+}
+.toast-bg {
+  background-color: var(--grey);
+}
+.button-container {
+  margin-left: auto;
+}
+.pri-text {
+  color: var(--white);
+}
+.toast-btn {
+  background: none;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+}
+.pri-btn {
+  color: #bb86fc;
+}
+.close-btn {
+  color: var(--white);
+  height: 1.8rem;
+  width: 1.8rem;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+}
+.close-btn:hover {
+  background-color: var(--grey-3);
+  border-radius: 50%;
+}
