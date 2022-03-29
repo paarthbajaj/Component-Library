@@ -428,3 +428,57 @@
   background-color: var(--grey-3);
   border-radius: 50%;
 }
+
+/* ************navigation************* */
+.navigation {
+  padding: 0.4rem 1rem;
+}
+.bg-purple {
+  background-color: var(--purple);
+}
+
+/* ************grids************* */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "grid-item-1 grid-item-2"
+    "grid-item-3 grid-item-4";
+}
+.three-item-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1.5fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "grid-item-1 grid-item-2 grid-item-3"
+    "grid-item-4 grid-item-5 grid-item-6";
+}
+.grid-item-dimension {
+  height: 200px;
+}
+.grid-item-1 {
+  grid-area: grid-item-1;
+}
+
+.grid-item-2 {
+  grid-area: grid-item-2;
+}
+
+.grid-item-3 {
+  grid-area: grid-item-3;
+}
+
+.grid-item-4 {
+  grid-area: grid-item-4;
+}
+.grid-item-5 {
+  grid-area: grid-item-5;
+}
+.grid-item-6 {
+  grid-area: grid-item-6;
+}

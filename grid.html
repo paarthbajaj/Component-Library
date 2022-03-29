@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./components.css" />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./utility-classes.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Modal</title>
+    <title>Toast</title>
     <link rel="icon" href="./assets/images/patched-logo.ico" />
   </head>
   <body>
@@ -46,26 +47,57 @@
       </aside>
       <hr class="vertical-line" />
       <main class="grow-1">
-        <h2 class="heading-1">Modal</h2>
+        <h2 class="heading-1">Grid</h2>
         <p>
-          The modal component provides a solid foundation for creating dialogs,
-          popovers, lightboxes, or whatever else. The component renders its
-          children node in front of a backdrop component. Creates a backdrop,
-          for disabling interaction below the modal.
+          The toast component is like an alert box that is only shown for a
+          couple of seconds when something happens (i.e. when the user clicks on
+          a button, submits a form, etc.).
         </p>
-        <h4 class="heading-3">Example</h4>
+        <h4 class="heading-3">Example of 2-items Grid</h4>
         <div class="container-box m-radius">
-          <img
-            class="img-modal"
-            src="/assets/images/modal.png"
-            alt="modal-image"
-          />
+          <div class="grid-container">
+            <div class="grid-item-1 black-border grid-item-dimension">
+              Area 1
+            </div>
+            <div class="grid-item-2 black-border grid-item-dimension">
+              Area 2
+            </div>
+            <div class="grid-item-3 black-border grid-item-dimension">
+              Area 3
+            </div>
+            <div class="grid-item-4 black-border grid-item-dimension">
+              Area 4
+            </div>
+          </div>
+        </div>
+        <h4 class="heading-3">Example of 3-items Grid</h4>
+        <div class="container-box m-radius">
+          <div class="three-item-grid-container">
+            <div class="grid-item-1 black-border grid-item-dimension">
+              Area 1
+            </div>
+            <div class="grid-item-2 black-border grid-item-dimension">
+              Area 2
+            </div>
+            <div class="grid-item-3 black-border grid-item-dimension">
+              Area 3
+            </div>
+            <div class="grid-item-4 black-border grid-item-dimension">
+              Area 4
+            </div>
+            <div class="grid-item-5 black-border grid-item-dimension">
+              Area 5
+            </div>
+            <div class="grid-item-6 black-border grid-item-dimension">
+              Area 6
+            </div>
+          </div>
         </div>
         <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=729&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=28px&ph=33px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522dialog-box%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522header-text%2522%253EDialog%2520Header%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522dialog-text%2522%253E%2520Dialog%2520Text%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-success%2522%253EFull-width%2520Action%25201%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-danger%2520close-modal%2522%253EClose%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=613.75&ds=true&dsyoff=24px&dsblur=68px&wc=true&wa=false&pv=30px&ph=39px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522two-item-grid-container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-item-1%2522%253EArea%25201%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-item-2%2522%253EArea%25202%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-item-3%2522%253EArea%25203%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522grid-item-4%2522%253EArea%25204%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
           style="
-            width: 49rem;
-            height: 20rem;
+            width: 40rem;
+            height: 18rem;
             border: 0;
             transform: scale(1);
             overflow: hidden;
@@ -73,34 +105,17 @@
           sandbox="allow-scripts allow-same-origin"
         >
         </iframe>
-        <h4 class="heading-3">Live Demo</h4>
-        <div class="container-box m-radius">
-          <button class="btn btn-primary open-modal">Open Dialog Box</button>
-          <div class="dialog-box">
-            <div class="text-container">
-              <h3 class="header-text">Dialog Header</h3>
-              <p class="dialog-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
-            <div class="btn-container">
-              <button class="btn btn-success">Full-width Action 1</button>
-              <button class="btn btn-danger close-modal">Close</button>
-            </div>
-          </div>
-        </div>
-        <h4 class="heading-3">How it works?</h4>
-        <ul class="usage-list">
+        <h4 class="heading-3">Usage</h4>
+        <ul>
           <li>
-            <code>dialog-box</code> class is used to make the modal at the
-            centre using transform.
+            <code>grid-container</code> class includes all the properties like
+            display-grid, grid-template-columns and rows which are set to 1fr as
+            of now and grid template area.
           </li>
           <li>
-            Javascript is used for displaying modal and to change the body
-            color.
+            Classes starting with <code>grid-item</code> have only grid-area
+            proprty to define the area which helps in the layout of items in the
+            grid layout.
           </li>
         </ul>
       </main>
@@ -138,6 +153,5 @@
         <a href="https://neog.camp/handbook/home">The Neog Camp</a>
       </div>
     </footer>
-    <script src="./modal.js"></script>
   </body>
 </html>
