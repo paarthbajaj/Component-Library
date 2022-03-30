@@ -49,3 +49,6 @@
 .ml-auto {
   margin-left: auto;
 }
+.black-border {
+  border: 1px solid var(--black);
+}
