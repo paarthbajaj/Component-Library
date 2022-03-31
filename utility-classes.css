@@ -1,7 +1,5 @@
 @import url(https://patched-ui.netlify.app/components.css);
 @import url(https://patched-ui.netlify.app/styles.css);
-@import "./components.css";
-@import "./styles.css";
 
 .mtb-3-4 {
   margin: 0.75rem 0;
