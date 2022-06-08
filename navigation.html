@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./components.css" />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./utility-classes.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Modal</title>
+    <title>Navigation</title>
     <link rel="icon" href="./assets/images/patched-logo.ico" />
   </head>
   <body>
@@ -46,26 +47,30 @@
       </aside>
       <hr class="vertical-line" />
       <main class="grow-1">
-        <h2 class="heading-1">Modal</h2>
+        <h2 class="heading-1">Navigation - Desktop(Simple)</h2>
         <p>
-          The modal component provides a solid foundation for creating dialogs,
-          popovers, lightboxes, or whatever else. The component renders its
-          children node in front of a backdrop component. Creates a backdrop,
-          for disabling interaction below the modal.
+          Navbar helps user to navigate throughoout the site. Having easy-to-use
+          navigation is important for any web site. It also works as a roadmap
+          which help users to explore.
         </p>
         <h4 class="heading-3">Example</h4>
         <div class="container-box m-radius">
-          <img
-            class="img-modal"
-            src="/assets/images/modal.png"
-            alt="modal-image"
-          />
+          <header>
+            <nav class="navigation bg-purple flex-row align-center g-1">
+              <a class="logo white white-border link rounded-circle" href="#"
+                >Brand Logo</a
+              >
+              <a class="link white ml-auto" href="#">Link 1</a>
+              <a class="link white" href="#">Link 2</a>
+              <a class="link white" href="#">Link 3</a>
+            </nav>
+          </header>
         </div>
         <iframe
-          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=729&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=28px&ph=33px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522dialog-box%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522header-text%2522%253EDialog%2520Header%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522dialog-text%2522%253E%2520Dialog%2520Text%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-success%2522%253EFull-width%2520Action%25201%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn-danger%2520close-modal%2522%253EClose%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=htmlmixed&width=613.75&ds=true&dsyoff=24px&dsblur=68px&wc=true&wa=false&pv=30px&ph=39px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cheader%253E%250A%2509%253Cnav%2520class%253D%2522navigation%2520bg-purple%2520flex-row%2520align-center%2520g-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522logo%2520white%2520white-border%2520link%2520rounded-circle%2522%2520href%253D%2522%2523%2522%253EBrand%2520Logo%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522link%2520white%2520ml-auto%2522%2520href%253D%2522%2523%2522%253ELink%25201%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522link%2520white%2522%2520href%253D%2522%2523%2522%253ELink%25202%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522link%2520white%2522%2520href%253D%2522%2523%2522%253ELink%25203%253C%252Fa%253E%250A%2509%253C%252Fnav%253E%250A%253C%252Fheader%253E"
           style="
-            width: 49rem;
-            height: 20rem;
+            width: 40rem;
+            height: 24rem;
             border: 0;
             transform: scale(1);
             overflow: hidden;
@@ -73,34 +78,27 @@
           sandbox="allow-scripts allow-same-origin"
         >
         </iframe>
-        <h4 class="heading-3">Live Demo</h4>
-        <div class="container-box m-radius">
-          <button class="btn btn-primary open-modal">Open Dialog Box</button>
-          <div class="dialog-box">
-            <div class="text-container">
-              <h3 class="header-text">Dialog Header</h3>
-              <p class="dialog-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
-            <div class="btn-container">
-              <button class="btn btn-success">Full-width Action 1</button>
-              <button class="btn btn-danger close-modal">Close</button>
-            </div>
-          </div>
-        </div>
-        <h4 class="heading-3">How it works?</h4>
-        <ul class="usage-list">
+
+        <h4 class="heading-3">Usage</h4>
+        <ul>
           <li>
-            <code>dialog-box</code> class is used to make the modal at the
-            centre using transform.
+            Semantically your navbar should be under header tag. Nav tag tells
+            that there are navigation links inside it.
           </li>
           <li>
-            Javascript is used for displaying modal and to change the body
-            color.
+            Add a class with these properties in order to make your header fixed
+            at the top of website: position-fixed, top,left and right as 0,
+            position absolute and z-index to keep it above all the layers.
+          </li>
+          <li>
+            <code>navigation</code> class is providing padding only so it is
+            optional. White class indicates font color white, white-border class
+            indicates a sloid border which is white in color and link class is
+            used for applying text-decoration: none property.
+          </li>
+          <li>
+            You can remove bg-purple class and can add yours to provide a
+            background color.
           </li>
         </ul>
       </main>
@@ -138,6 +136,5 @@
         <a href="https://neog.camp/handbook/home">The Neog Camp</a>
       </div>
     </footer>
-    <script src="./modal.js"></script>
   </body>
 </html>

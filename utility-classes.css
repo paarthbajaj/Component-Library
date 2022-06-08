@@ -28,11 +28,11 @@
 .fw-6 {
   font-weight: 600;
 }
-.pl-3{
-    padding-left: 3rem;
+.pl-3 {
+  padding-left: 3rem;
 }
-.pr-3{
-    padding-right: 3rem;
+.pr-3 {
+  padding-right: 3rem;
 }
 .flex-wrap {
   flex-wrap: wrap;
@@ -45,4 +45,10 @@
 }
 .justify-between {
   justify-content: space-between;
+}
+.ml-auto {
+  margin-left: auto;
+}
+.black-border {
+  border: 1px solid var(--black);
 }
