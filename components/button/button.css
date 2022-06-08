@@ -1,0 +1,31 @@
+.btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+}
+.btn-primary {
+  color: var(--white);
+  background-color: #0f6fff;
+  border-color: #0f6fff;
+}
+.btn-secondary {
+  color: var(--black);
+  border-color: var(--black);
+}
+.btn-success {
+  color: var(--white);
+  background-color: #1d8b58;
+  border-color: #1d8b58;
+}
+.btn-danger {
+  color: var(--white);
+  background-color: #df3344;
+  border-color: #df3344;
+}
+.btn-dis {
+  pointer-events: none;
+  opacity: 0.6;
+}

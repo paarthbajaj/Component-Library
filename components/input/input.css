@@ -1,0 +1,43 @@
+.error {
+  color: var(--red);
+  display: none;
+  font-size: 0.7rem;
+}
+.req-input:invalid ~ .error,
+.req-pass:invalid ~ .error {
+  display: block;
+}
+.req-input:invalid {
+  border-color: var(--red);
+}
+.req-input:valid {
+  border-color: var(--sea-green);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  border: 1px solid var(--grey-2);
+  border-radius: 0.3rem;
+  padding: 3rem 2rem;
+}
+.form-label {
+  margin-top: 1rem;
+}
+.input {
+  border-radius: 0.4rem;
+  border: 1px solid var(--grey);
+  padding: 0.5rem 0.2rem;
+}
+.width-1 {
+  width: 13rem;
+}
+.form-btns {
+  margin-top: 2rem;
+}
+.form-heading {
+  font-size: 2rem;
+}
+.req-div {
+  min-width: 14.375rem;
+}

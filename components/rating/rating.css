@@ -1,0 +1,9 @@
+.rating-btn {
+  background-color: transparent;
+  color: var(--grey-3);
+  border: none;
+}
+
+.rating-btn:hover {
+  color: var(--darker-mud-yellow);
+}

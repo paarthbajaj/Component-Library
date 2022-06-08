@@ -1,0 +1,36 @@
+.list-circle {
+  list-style-type: circle;
+}
+.list-square {
+  list-style-type: square;
+}
+.list-uni-char {
+  list-style-type: "\1F44D";
+}
+.list-lower-roman {
+  list-style-type: lower-roman;
+}
+.list-lower-latin {
+  list-style-type: lower-latin;
+}
+.list-upper-latin {
+  list-style-type: upper-latin;
+}
+.stacked-list {
+  width: 20rem;
+}
+.stack-list-item {
+  display: block;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-left: 1px solid rgba(0, 0, 0, 0.125);
+  border-right: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.stacked-list:first-child {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+.stack-list-item:hover {
+  background-color: var(--grey-2);
+}

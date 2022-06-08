@@ -1,0 +1,36 @@
+.badge {
+  padding: 0.8rem;
+  position: relative;
+}
+.notify-count {
+  font-size: 1.4rem;
+  max-width: 1.6em;
+  max-height: 1.6em;
+  min-width: 1.6em;
+  min-height: 1.6em;
+  position: absolute;
+  top: 0;
+  color: var(--white);
+}
+.notify-count-right {
+  background-color: var(--sea-green);
+  right: 0;
+}
+.notify-count-left {
+  background-color: var(--red);
+  left: 0;
+}
+.badge-icon {
+  font-size: 3.5rem !important;
+}
+.notify {
+  max-width: 1em;
+  max-height: 1em;
+  min-width: 1em;
+  min-height: 1em;
+  position: absolute;
+  top: 0;
+}
+.badge-avatar {
+  position: relative;
+}
