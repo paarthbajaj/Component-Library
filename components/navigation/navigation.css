@@ -4,3 +4,8 @@
 .bg-purple {
   background-color: var(--purple);
 }
+@media only screen and (max-width: 450px) {
+  .navigation {
+    width: 100%;
+  }
+}
